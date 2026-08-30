@@ -1,0 +1,156 @@
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+title: Nils Handler
+first_name: Nils
+middle_name:
+last_name: Handler
+email: nils.handler@gmail.com
+description: Economist & Climate Strategist | PhD Candidate, Berlin School of Economics
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with
+  <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+url: https://nilshandler.github.io  # replace with your actual GitHub username
+baseurl:
+last_updated: true
+impressum_path:
+
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
+theme: minima
+remote_theme: alshedivat/al-folio
+
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+navbar_fixed: true
+footer_fixed: false
+search_enabled: false
+socials_in_search: false
+bib_search: false
+
+# -----------------------------------------------------------------------------
+# Open Graph & Schema.org
+# -----------------------------------------------------------------------------
+serve_og_meta: true
+serve_schema_org: true
+og_image:
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+github_username: nilshandler          # replace with your username
+linkedin_username: nils-handler
+twitter_username:
+scholar_userid:                        # add Google Scholar ID when ready
+orcid_id:                             # add after registering
+
+# Contact (shown in sidebar)
+contact_note: >
+  Available for research collaboration, consulting, and speaking engagements.
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+blog_name: Nils Handler
+blog_nav_title: news
+blog_description:
+permalink: /blog/:year/:title/
+future: false
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: /page:num/
+  sort_field: date
+  sort_reverse: true
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: false
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+display_tags: []
+display_categories: []
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+include: [_pages]
+exclude:
+  - bin/
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+keep_files:
+  - CNAME
+  - .nojekyll
+  - .git
+
+# -----------------------------------------------------------------------------
+# Plug-ins
+# -----------------------------------------------------------------------------
+plugins:
+  - jekyll-archives
+  - jekyll-diagrams
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-toc
+  - jekyll-twitter-plugin
+  - jemoji
+
+# Scholar (publications)
+scholar:
+  last_name: Handler
+  first_name: [Nils, N.]
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+  query: "@*"
+  group_by: year
+  group_order: descending
+
+# -----------------------------------------------------------------------------
+# Misc
+# -----------------------------------------------------------------------------
+enable_darkmode: true
+enable_tooltips: false
+external_links_new_tab: true
+enable_medium_zoom: true

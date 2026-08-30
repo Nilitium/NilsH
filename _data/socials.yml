@@ -1,0 +1,11 @@
+- platform: Email
+  icon: fas fa-envelope
+  url: mailto:nils.handler@gmail.com
+
+- platform: LinkedIn
+  icon: fab fa-linkedin
+  url: https://www.linkedin.com/in/nils-handler
+
+- platform: d\carb Forum
+  icon: fas fa-globe
+  url: https://www.decarb.world
